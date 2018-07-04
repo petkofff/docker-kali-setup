@@ -1,2 +1,2 @@
 # docker-kali-setup
-My Kali Linux Docker configuration
+My Kali Linux Docker setup
