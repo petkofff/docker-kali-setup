@@ -7,6 +7,6 @@ RUN apt-get update && apt-get -y \
     man-db \
     exploitdb \
     htop  \
-    tmux
- 
+    tmux 
+
 CMD ["/bin/bash"]
