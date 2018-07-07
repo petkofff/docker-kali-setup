@@ -7,6 +7,12 @@ RUN apt-get update && apt-get -y \
     man-db \
     exploitdb \
     htop  \
-    tmux 
+    tmux \
+    git
+
+ENV dotfilesfolder /root/dotfiles
+RUN mkdir $dotfilesfolder  && 
+    git clone https://github.com/petkofff/dotfiles.git $dotfilesfolder &&
+    $dotfilesfolder/install.sh
 
 CMD ["/bin/bash"]
