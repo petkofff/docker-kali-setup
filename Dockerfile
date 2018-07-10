@@ -11,8 +11,8 @@ RUN apt-get update && apt-get -y \
     git
 
 ENV dotfilesfolder /root/dotfiles
-RUN mkdir $dotfilesfolder  && 
-    git clone https://github.com/petkofff/dotfiles.git $dotfilesfolder &&
-    $dotfilesfolder/install.sh
+RUN mkdir $dotfilesfolder  && \
+    git clone https://github.com/petkofff/dotfiles.git $dotfilesfolder && \
+    bash $dotfilesfolder/install.sh
 
 CMD ["/bin/bash"]
